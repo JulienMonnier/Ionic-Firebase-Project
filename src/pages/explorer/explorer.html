@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Firebase Explorer</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- faire une indexation -->
+
+<ion-content padding>
+  <ion-row *ngFor="let img of result">
+    <ion-card>
+      <ion-card-content>
+        <img src="{{img}}"/>  
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+</ion-content>
+
+<!--
+<ion-list [virtualScroll]="items">
+  <ion-item *virtualItem="let item">
+    {{ item }}
+  </ion-item>
+</ion-list>
+-->
